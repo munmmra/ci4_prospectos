@@ -14,16 +14,19 @@ CREATE DATABASE IF NOT EXISTS ci4_dependencias CHARACTER SET utf8 COLLATE utf8_g
 
 ``` sql
 CREATE TABLE IF NOT EXISTS dependencia (
-    id              INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    nombre          VARCHAR(200) NOT NULL,
-    slug            VARCHAR(200) NOT NULL,
-    contacto_nombre VARCHAR(200),
-    puesto          VARCHAR(200),
-    telefono        VARCHAR(200),
-    extencion       VARCHAR(200),
-    correo          VARCHAR(200),
-    estatus         INT UNSIGNED NOT NULL,
-    obcervaciones   TEXT,
+    id                 INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    nombre             VARCHAR(200) NOT NULL,
+    pagina_web         VARCHAR(200) NULL,
+    rubro              VARCHAR(100) NULL,
+    contacto_nombre    VARCHAR(200),
+    contacto_puesto    VARCHAR(200),
+    contacto_telefono  VARCHAR(200),
+    contacto_extencion VARCHAR(200),
+    contacto_correo    VARCHAR(200),
+    estatus            INT UNSIGNED NOT NULL,
+    obcervaciones      TEXT,
+    siglas             VARCHAR(10),
+    slug               VARCHAR(200) NOT NULL,
     PRIMARY KEY (id),
     UNIQUE slug (slug)
 );
@@ -36,11 +39,15 @@ CREATE TABLE IF NOT EXISTS dependencia (
   
   ### datos
 ``` sql
-INSERT INTO dependencias VALUES
+INSERT INTO dependencia VALUES
 (1,'Elvis sighted','elvis-sighted','Elvis was sighted at the Podunk internet cafe. It looked like he was writing a CodeIgniter app.'),
 (2,'Say it isn\'t so!','say-it-isnt-so','Scientists conclude that some programmers have a sense of humor.'),
 (3,'Caffeination, Yes!','caffeination-yes','World\'s largest coffee shop open onsite nested coffee shop for staff only.');
 ```
+
+INSERT IN TO dependencia VALUES 1,`Administración del Patrimonio de la Beneficencia Pública (APBP)`,`https://www.gob.mx/salud/apbp/ `,``.``,``,``,``,``,``,`investigación`,``,`administracion-del-patrimonio-de-la-beneficencia-publica`,`APBP`)
+![image](https://github.com/munmmra/ci4_prospectos/assets/8868603/0b7d7fcf-b173-40a9-9857-c0d8df3bccc9)
+
 </details>
 
 CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
