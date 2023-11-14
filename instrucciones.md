@@ -13,6 +13,7 @@ CREATE DATABASE IF NOT EXISTS ci4_dependencias CHARACTER SET utf8 COLLATE utf8_g
 ### 2.- Creación de la tabla dependencia
 
 ``` sql
+use nombre_bbdd;
 CREATE TABLE IF NOT EXISTS dependencia (
     id                 INT UNSIGNED NOT NULL AUTO_INCREMENT,
     nombre             VARCHAR(200) NOT NULL,
