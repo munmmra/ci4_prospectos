@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS dependencia (
     contacto_telefono  VARCHAR(200),
     contacto_extencion VARCHAR(200),
     contacto_correo    VARCHAR(200),
-    estatus            INT UNSIGNED NOT NULL,
+    estatus            VARCHAR(100),
     obcervaciones      TEXT,
     siglas             VARCHAR(10),
     slug               VARCHAR(200) NOT NULL,
