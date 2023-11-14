@@ -41,7 +41,6 @@ CREATE TABLE IF NOT EXISTS dependencia (
   ### datos
 ``` sql
 INSERT INTO dependencia VALUES
-INSERT INTO dependencia VALUES
 (1,'Administración del Patrimonio de la Beneficencia Pública (APBP)','https://www.gob.mx/salud/apbp/ ','','','','','','','investigación','','APBP','administracion-del-patrimonio-de-la-beneficencia-publica'),
 (2,'Administración Federal de Servicios Educativos en el Distrito Federal (AFSEDF)','https://www.gob.mx/aefcm ','educación','','','','','','investigación','','AFSEDF','administracion-federal-de-servicios-educativos-en-el-distrito-federal'),
 (3,'Administración Portuaria Integral de Altamira S.A de C.V (API Altamira)','http://www.puertoaltamira.com.mx/espi/0000001/inicio ','puertos','','','','','','investigación','','API Altamira','administracion-portuaria-integral-de-altamira-sa-de-cv'),
