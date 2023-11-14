@@ -35,6 +35,8 @@ CREATE TABLE IF NOT EXISTS dependencia (
 
 ### 3 Poblar la tabla dependencias
 
+Ejecute los inserts que siguen acontunuacipon o importe el archivo 
+
 <details>
   <summary>Click me</summary>
   
