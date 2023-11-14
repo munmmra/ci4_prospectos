@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS dependencia (
     contacto_correo    VARCHAR(200),
     estatus            VARCHAR(100),
     obcervaciones      TEXT,
-    siglas             VARCHAR(20),
+    siglas             VARCHAR(50),
     slug               VARCHAR(200) NOT NULL,
     PRIMARY KEY (id),
     UNIQUE slug (slug)
